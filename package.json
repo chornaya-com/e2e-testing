@@ -1,0 +1,12 @@
+{
+  "name": "e2e-testing",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:chornaya-com/e2e-testing.git",
+  "author": "chornaya-com <me@chornaya.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.34.3"
+  },
+  "scripts": {}
+}
