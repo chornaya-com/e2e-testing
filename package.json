@@ -12,6 +12,7 @@
     "show-report": "yarn playwright show-report",
     "test": "yarn playwright test",
     "test:prod": "PRODUCTION=true yarn playwright test",
-    "test-ui": "yarn playwright test --ui"
+    "test-ui": "yarn playwright test --ui",
+    "test-ui:prod": "PRODUCTION=true yarn playwright test --ui"
   }
 }
