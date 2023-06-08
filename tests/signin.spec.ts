@@ -30,11 +30,8 @@ test('sign in flow', async ({page}) => {
     // Click sign in button
     await signInButton.click();
 
-
     // Switch the context to the iframe
     const iframeElement = await page.waitForSelector('#parasite-container > iframe');
-
-    // Switch the context to the iframe
     const frame = await iframeElement.contentFrame();
 
     // fetch user credentials
@@ -42,7 +39,7 @@ test('sign in flow', async ({page}) => {
 
     // Fill in email and password fields
     const emailField = await frame.waitForSelector(emailFieldSelector);
-    await emailField.fill(user.email,);
+    await emailField.fill(user.email);
 
     const passwordField = await frame.waitForSelector(passwordFieldSelector);
     await passwordField.fill(user.password);
