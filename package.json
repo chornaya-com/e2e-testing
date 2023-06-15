@@ -13,6 +13,7 @@
     "test": "yarn playwright test",
     "test:prod": "PRODUCTION=true yarn playwright test",
     "test-ui": "yarn playwright test --ui",
+    "test-headed": "yarn playwright test --headed",
     "test-ui:prod": "PRODUCTION=true yarn playwright test --ui"
   }
 }
