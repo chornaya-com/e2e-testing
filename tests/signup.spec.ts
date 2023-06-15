@@ -9,6 +9,7 @@ const nicknameFieldSelector = `input[id="nickname"]`;
 const firstNameFieldSelector = `input[id="firstname"]`;
 const lastNameFieldSelector = `input[id="lastname"]`;
 const passwordFieldSelector = `input[id="password"]`;
+const confirmPasswordFieldSelector = `input[id="passwordConfirm"]`;
 const dropdownSelector = `.sc-fxwrCY.dfinVz`;
 const dateSelector = `#selected\\.2`;
 const monthSelector = `#selected\\.3`;
@@ -76,6 +77,9 @@ test('sign up flow', async ({page}) => {
 
     const passwordField = await frame.waitForSelector(passwordFieldSelector);
     await passwordField.type(user.password);
+
+    const confirmPasswordField = await frame.waitForSelector(confirmPasswordFieldSelector);
+    await confirmPasswordField.type(user.password);
 
     const dropdowns = await frame.$$(dropdownSelector);
 
